@@ -1,0 +1,49 @@
+{
+  "ticker": "AAPL",
+  "company": "Apple",
+  "family": "SARIMAX",
+  "order": [
+    3,
+    0,
+    0
+  ],
+  "seasonal_order": [
+    1,
+    1,
+    0,
+    5
+  ],
+  "selection_method": "pmdarima.auto_arima",
+  "selection_criterion": "AIC",
+  "metrics": {
+    "mae": 19.473830082190826,
+    "rmse": 26.165325089105973,
+    "mape": 6.820213124740214
+  },
+  "best_test_candidate": {
+    "family": "SARIMAX",
+    "order": [
+      2,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      1,
+      0,
+      5
+    ],
+    "mae": 13.939822154536092,
+    "rmse": 17.081523214359386,
+    "mape": 5.139895158853136
+  },
+  "aic": -6502.2194101702335,
+  "bic": -6471.240375825154,
+  "history_start": "2021-06-02",
+  "history_end": "2026-06-01",
+  "test_size": 90,
+  "seasonal_period": 5,
+  "data_source": "Yahoo Finance",
+  "model_path": "AAPL_model.pkl",
+  "scaler_path": "AAPL_scaler.pkl"
+}

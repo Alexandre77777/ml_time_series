@@ -1,0 +1,49 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft",
+  "family": "SARIMAX",
+  "order": [
+    3,
+    0,
+    0
+  ],
+  "seasonal_order": [
+    1,
+    1,
+    0,
+    5
+  ],
+  "selection_method": "pmdarima.auto_arima",
+  "selection_criterion": "AIC",
+  "metrics": {
+    "mae": 55.650598981929754,
+    "rmse": 59.57346591563223,
+    "mape": 14.074132251200785
+  },
+  "best_test_candidate": {
+    "family": "SARIMAX",
+    "order": [
+      0,
+      0,
+      0
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      0,
+      5
+    ],
+    "mae": 52.04488016764323,
+    "rmse": 56.42682486848636,
+    "mape": 13.165457281623032
+  },
+  "aic": -6433.838218774314,
+  "bic": -6402.859184429234,
+  "history_start": "2021-06-02",
+  "history_end": "2026-06-01",
+  "test_size": 90,
+  "seasonal_period": 5,
+  "data_source": "Yahoo Finance",
+  "model_path": "MSFT_model.pkl",
+  "scaler_path": "MSFT_scaler.pkl"
+}
