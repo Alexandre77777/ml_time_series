@@ -67,7 +67,7 @@ def show_model_summary(metadata: dict) -> None:
     order = tuple(metadata.get("order", []))
     seasonal_order = tuple(metadata.get("seasonal_order", []))
     metrics = metadata.get("metrics", {})
-    selection_method = metadata.get("selection_method", "ручной подбор параметров")
+    selection_method = metadata.get("selection_method", "pmdarima.auto_arima")
     selection_criterion = metadata.get(
         "selection_criterion",
         "метрики на контрольном отрезке",

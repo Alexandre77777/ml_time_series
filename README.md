@@ -12,8 +12,7 @@ TimeSeries/
 ├── frontend.py                                  # пользовательская часть приложения
 ├── backend.py                                   # загрузка данных, модели и прогноз
 ├── notebooks/
-│   ├── training_pipeline_auto_arima_stock_forecasting.ipynb # основная последовательность обучения
-│   └── training_pipeline_stock_forecasting.ipynb            # ручной подбор параметров для сравнения
+│   └── training_pipeline_auto_arima_stock_forecasting.ipynb # основная последовательность обучения
 ├── models/
 │   ├── AAPL_model.pkl
 │   ├── AAPL_scaler.pkl
@@ -61,11 +60,6 @@ notebooks/training_pipeline_auto_arima_stock_forecasting.ipynb
 - `*_metadata.json` - параметры, метрики качества и сведения о модели;
 - `auto_arima_model_results.csv` - таблица сравнения проверенных вариантов
   модели.
-
-Дополнительно оставлен блокнот `training_pipeline_stock_forecasting.ipynb` с
-ручным перебором AR/MA/ARMA/ARIMA/SARIMAX. Он полезен как расширенный
-исследовательский вариант, но студентам-новичкам проще начинать с
-`auto_arima`.
 
 ## Запуск приложения
 
